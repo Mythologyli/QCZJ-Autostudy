@@ -59,7 +59,7 @@ class YouthLearning:
             'Sec-Fetch-Dest': 'document',
         }
 
-        temp_headers = self.headers
+        temp_headers = self.headers.copy()
         temp_headers.update(headers)
         time_stamp = str(int(time.time()))  # 获取时间戳
 
